@@ -1,0 +1,26 @@
+POST http://localhost/api
+Content-Type: application/json
+
+{
+  "message": "example message"
+}
+
+### default sort by date asc
+GET http://localhost/api
+Content-Type: application/json
+
+### sort by date desc
+GET http://localhost/api?sortBy=date&sortOrder=desc
+Content-Type: application/json
+
+### sort by uuid asc
+GET http://localhost/api?sortBy=uuid&sortOrder=asc
+Content-Type: application/json
+
+### sort by uuid desc
+GET http://localhost/api?sortBy=uuid&sortOrder=desc
+Content-Type: application/json
+
+### get file message by uuid
+GET http://localhost/api/6bd86957-b441-4ad4-989f-27904729b100
+Content-Type: application/json
